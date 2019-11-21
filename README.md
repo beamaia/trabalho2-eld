@@ -1,6 +1,6 @@
 # Trabalho 2 - CRC
 Repositório destinado ao segundo trabalho da disciplina ELD.
-## Arquivos incluidos::
+## Arquivos incluidos:
 * Gerador de mensagem
 	* Gera mensagems de 0/1 de 500 bits
 	* Arquivos de mensagem para a leitura
