@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="2.14.6" version="1.0">
-This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
-<lib desc="#Wiring" name="0"/>
+<project source="2.15.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+
+  <lib desc="#Wiring" name="0"/>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2">
     <tool name="Multiplexer">
@@ -128,32 +129,33 @@ end TCL_Generic;
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="circuitnamedbox" val="true"/>
+    <a name="circuitnamedboxfixedsize" val="false"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(520,270)" to="(960,270)"/>
+    <wire from="(920,330)" to="(920,600)"/>
     <wire from="(150,650)" to="(150,660)"/>
     <wire from="(200,600)" to="(200,610)"/>
     <wire from="(470,270)" to="(520,270)"/>
+    <wire from="(190,640)" to="(190,650)"/>
+    <wire from="(210,640)" to="(210,650)"/>
     <wire from="(210,650)" to="(260,650)"/>
-    <wire from="(580,360)" to="(580,390)"/>
+    <wire from="(260,650)" to="(260,660)"/>
+    <wire from="(200,520)" to="(200,600)"/>
     <wire from="(920,330)" to="(960,330)"/>
+    <wire from="(570,360)" to="(570,390)"/>
+    <wire from="(150,650)" to="(190,650)"/>
     <wire from="(200,240)" to="(200,520)"/>
     <wire from="(200,640)" to="(200,670)"/>
+    <wire from="(520,270)" to="(520,310)"/>
     <wire from="(710,500)" to="(730,500)"/>
     <wire from="(200,520)" to="(730,520)"/>
     <wire from="(820,360)" to="(820,550)"/>
+    <wire from="(270,180)" to="(280,180)"/>
     <wire from="(200,240)" to="(280,240)"/>
     <wire from="(200,600)" to="(920,600)"/>
-    <wire from="(810,550)" to="(820,550)"/>
-    <wire from="(920,330)" to="(920,600)"/>
-    <wire from="(190,640)" to="(190,650)"/>
-    <wire from="(210,640)" to="(210,650)"/>
-    <wire from="(260,650)" to="(260,660)"/>
-    <wire from="(200,520)" to="(200,600)"/>
-    <wire from="(150,650)" to="(190,650)"/>
-    <wire from="(520,270)" to="(520,310)"/>
-    <wire from="(270,180)" to="(280,180)"/>
     <wire from="(890,310)" to="(960,310)"/>
     <wire from="(820,360)" to="(960,360)"/>
+    <wire from="(810,550)" to="(820,550)"/>
     <comp lib="0" loc="(120,30)" name="Pin">
       <a name="label" val="start"/>
     </comp>
@@ -167,8 +169,8 @@ end TCL_Generic;
       <a name="label" val="reset"/>
     </comp>
     <comp lib="4" loc="(280,160)" name="Counter">
-      <a name="width" val="10"/>
-      <a name="max" val="0x3ff"/>
+      <a name="width" val="9"/>
+      <a name="max" val="0x1ff"/>
     </comp>
     <comp lib="0" loc="(270,180)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -190,14 +192,10 @@ end TCL_Generic;
       <a name="facing" val="north"/>
       <a name="label" val="start"/>
     </comp>
-    <comp lib="0" loc="(580,390)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="nao500"/>
-    </comp>
     <comp lib="0" loc="(520,310)" name="Splitter">
       <a name="facing" val="south"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
+      <a name="fanout" val="9"/>
+      <a name="incoming" val="9"/>
     </comp>
     <comp lib="4" loc="(730,470)" name="Random">
       <a name="width" val="1"/>
@@ -211,14 +209,18 @@ end TCL_Generic;
       <a name="label" val="start"/>
     </comp>
     <comp lib="4" loc="(960,260)" name="RAM">
-      <a name="addrWidth" val="10"/>
+      <a name="addrWidth" val="9"/>
       <a name="dataWidth" val="1"/>
       <a name="databus" val="bibus"/>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp loc="(580,360)" name="n500">
+    <comp loc="(570,360)" name="n500">
       <a name="facing" val="south"/>
       <a name="labelvisible" val="false"/>
+    </comp>
+    <comp lib="0" loc="(570,390)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="nao500"/>
     </comp>
   </circuit>
   <circuit name="n500">
@@ -227,6 +229,7 @@ end TCL_Generic;
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="circuitnamedbox" val="false"/>
+    <a name="circuitnamedboxfixedsize" val="false"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(390,250)" to="(390,320)"/>
     <wire from="(140,240)" to="(330,240)"/>
