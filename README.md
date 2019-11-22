@@ -6,4 +6,5 @@ Repositório destinado ao segundo trabalho da disciplina ELD.
 	* Arquivos de mensagem para a leitura
 * CRC - 4 bits
 	* Problemas com a leitura de arquivo da RAM
-	* Parece esta funcionando o CRC
+	* Esta funcionando o CRC
+* Oi gente
